@@ -1,0 +1,33 @@
+美国KT机房  www.krypt.com （不评论，你懂地）
+
+美国FDC机房 Fdcservers.net（IP还算充足，很容易往死了抽）
+
+美国HE机房  www.he.net  （线路还不错，但是容易抽）
+
+美国VS机房 www.verio.com（貌似此机房跟VE分不清楚，好像是同一个吧？）
+
+美国BS机房 www.burst.net（根据网上某些服务器租用网上提供的IP路由跟踪是84机房，目前走PCCW）
+
+美国PR机房 www.pacificrack.com（据评论来讲还算不错）
+
+美国AK机房 www.awknet.com（华人机房，说是抗攻击，没用过）
+
+美国DS机房 www.directSpace.net（貌似这个也可以）
+
+美国SP机房 www.serverpoint.com（没用过，不评论）
+
+美国SK机房 www.sharktech.net（同样的，所说抗攻击）
+
+美国ST机房 www.staminus.net（官网说明抗攻击，但抗攻击力度被国人人为神话了）
+
+美国100T机房 www.100tb.com（流量大，带宽足，其他不清楚）
+
+美国SL机房 www.softlayer.com（真正的牛逼机房，东西贵，但是线路确实不错）
+
+美国LS机房 www.limestonenetworks.com（很想入手的一个机房，目前蛋蛋手里就有这个机房的VPS）
+
+美国CL机房 **linkchina.com（国人建的，目前他们官网上没有看到有独服，以前的平台无法访问）
+
+美国SS机房 www.securedservers.com（凤凰城机房，目前手里有一台。技术人员很二，但是态度不错，24小时在线的技术支持）
+
+美国NGT机房 www.krypt.com（路由跟踪测试IP，与KT同一家）
