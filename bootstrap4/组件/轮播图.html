@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style type="text/css" media="screen">
+        img{
+            height:150px;
+        }
+    </style>
+
+    <script >
+    var show = true;
+    function hideText(){
+        if (show) {
+            $('.carousel-caption').fadeToggle();
+        }else{
+            $('.carousel-caption').fadeToggle();
+        };
+        show = !show;
+
+    }
+    function preOrAft(what){
+        $('.carousel').carousel(what);
+    }
+    function changeTo(num){
+        $('.carousel').carousel(num);
+    }
+        $(document).ready(function() {
+            //转化间隔
+            $('.carousel').carousel({
+                interval:999999
+            });
+
+            $('#btn_pause').click(function(){
+                $(".carousel").carousel('pause');
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel" style = "height:500px;">
+
+          <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+          <!-- 轮播图片 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img class="w-100 h-100" src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+                      <div class="carousel-caption">
+                        <h3>第一张图片描述标题</h3>
+                        <p>描述文字!</p>
+                      </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img class="w-100 h-100" src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+                      <div class="carousel-caption">
+                        <h3>第一张图片描述标题</h3>
+                        <p>描述文字!</p>
+                      </div>
+                </div>
+                <div class="carousel-item h-100">
+                <img class="w-100 h-100" src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+                      <div class="carousel-caption">
+                        <h3>第一张图片描述标题</h3>
+                        <p>描述文字!</p>
+                      </div>
+                </div>
+            </div>
+
+          <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        <button id="btn_pause" type="button" class = "btn btn-block btn-warning">pause</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-success" onclick="changeTo(0)">1</button>
+            <button type="button" class="btn btn-success" onclick="changeTo(1)">2</button>
+            <button type="button" class="btn btn-success" onclick="changeTo(2)">3</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger" onclick="preOrAft('prev')" >pre</button>
+            <button type="button" class="btn btn-danger" onclick="preOrAft('next')">next</button>
+        </div>
+        <button type="button" class="btn btn-secondary" onclick="hideText()">hidden text</button>
+
+</div>
+
+
+
+</body>
+</html>

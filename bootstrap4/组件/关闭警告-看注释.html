@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script >
+        $(document).ready(function() {
+
+            $("#aaa").click(function(){
+                $('.alert').alert('close');
+            });
+            $("##bbb").click(function(){
+                $('.alert').alert();
+            });
+        });
+    </script>
+</head>
+<body>
+<!--
+1.可以在右上角定义一个.close关闭按钮效果，则需要在容器中引用 .alert-dismissible 类。
+2.警告按钮上要增加data-dismiss="alert" 触发 JavaScript 动作，同时使用<button>元素，以确保在所有设备上都能获得正确的行为响应。
+要在关闭警报时生成警报提示，请确保添加.fade和.show样式。
+-->
+    <div class="alert alert-danger alert-dismissible fade show">
+        error！！！！！
+        <button type="button" class="close" data-dismiss = "alert">
+        <span>&times;</span>
+        </button>
+    </div>
+    <a class="btn btn-primary" id="aaa">close</a>
+    <a class="btn btn-primary" id="bbb">alert</a>
+</body>
+</html>
