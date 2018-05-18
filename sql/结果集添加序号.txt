@@ -1,0 +1,2 @@
+set @rownum=0;
+select (@rownum:=@rownum+1) AS rownum, user.name ,article.title from  user,article where user.id = article.id;

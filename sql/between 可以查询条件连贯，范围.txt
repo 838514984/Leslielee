@@ -1,0 +1,2 @@
+select * from article where type between 1 and 100;		//查询type从1到100的值
+select * from article where type not between 1 and 100;	//查询type不在1-100区间内

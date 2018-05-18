@@ -1,0 +1,4 @@
+SELECT u.phone as phonenumber,a.title as articletitle from user as u,article as a where u.id = a.id
+// 将user表别名为u，将article别名成 a
+// 查询结果将user表的phone字段别名为phonenumber，将article的title别名为articletitle 
+// TIPS：中间不能有空格
